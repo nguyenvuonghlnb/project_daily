@@ -3,6 +3,8 @@ import psycopg2
 # from config import load_os_dotenv
 
 # print(os.getenv("POSTGRES_PASS"))
+# print(os.getenv("POSTGRES_HOST"))
+# print(os.getenv("POSTGRES_DATABASE"))
 # load_os_dotenv()
 main = psycopg2.connect(
     host=os.getenv("POSTGRES_HOST"),
