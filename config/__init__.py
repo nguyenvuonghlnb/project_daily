@@ -6,7 +6,7 @@ from pathlib import Path
 # path = "./config/." + os.getenv("app_env") + ".env"
 # load_dotenv(dotenv_path=path)
 
-path = f"./config/.{os.getenv('env')}.env"
+path = f"./config/.{os.getenv('app_env')}.env"
 load_dotenv(dotenv_path=path)
 
 # print(f"Running config path: {path} {os.environ}")
