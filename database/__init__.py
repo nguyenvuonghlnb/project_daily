@@ -1,9 +1,9 @@
 import os
 import psycopg2
-from config import load_os_dotenv
+# from config import load_os_dotenv
 
 # print(os.getenv("POSTGRES_PASS"))
-load_os_dotenv()
+# load_os_dotenv()
 main = psycopg2.connect(
     host=os.getenv("POSTGRES_HOST"),
     port=os.getenv("POSTGRES_PORT"),
