@@ -9,7 +9,7 @@ from pathlib import Path
 # print(f"Running config path: {path} {os.environ}")
 
 # def load_os_dotenv() :
-path = Path(f'{os.getcwd()}/config/.{os.environ.get("env")}.env')
+path = Path(f'{os.getcwd()}/config/.{os.environ.get("app_env")}.env')
 load_dotenv(path)
 if os.path.exists(path):
     load_dotenv(path)

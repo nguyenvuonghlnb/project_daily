@@ -7,7 +7,7 @@ module.exports = {
         instances: 1,
         stop_exit_codes: [0],
         env: {
-            env: "development"
+            app_env: "development"
         }
       }
   ]
