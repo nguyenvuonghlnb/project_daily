@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  app:
+    build: ./
+    image: test-pm2-python-app:1
+    command: pm2-runtime start ecosystem.config.js
+    restart: always
